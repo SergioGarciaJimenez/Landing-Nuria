@@ -34,24 +34,30 @@
           <ol class="olcards">
             <li>
               <div class="content">
-                <div class="icon"><img src="img/icons/camino.png"></div>
+                <div class="icon"><img src="img/icons/camino.png" /></div>
                 <div class="title">Encuentra tu propósito</div>
               </div>
             </li>
             <li>
               <div class="content">
-                <div class="icon"><img src="img/icons/pensamiento-negativo.png"></div>
-                <div class="title">Rompe los patrones de pensamiento negativos</div>
+                <div class="icon">
+                  <img src="img/icons/pensamiento-negativo.png" />
+                </div>
+                <div class="title">
+                  Rompe los patrones de pensamiento negativos
+                </div>
               </div>
             </li>
             <li>
               <div class="content">
-                <div class="icon"><img src="img/icons/emocional.png"></div>
-                <div class="title">Maneja tus emociones de forma más saludable</div>
+                <div class="icon"><img src="img/icons/emocional.png" /></div>
+                <div class="title">
+                  Maneja tus emociones de forma más saludable
+                </div>
               </div>
             </li>
-            </ol>
-            <button>¡Quiero cambiar mi vida!</button>
+          </ol>
+          <button>¡Quiero cambiar mi vida!</button>
         </div>
         <img id="Nuria-libro" src="img/photos/Libro sin fondo.png" />
       </div>
@@ -82,35 +88,55 @@
     </div>
 
     <div class="testimonios">
-      <h3 class="testimonios-title">Testimonios</h3>
-      <ul class="lista-test">
-        <li class="test">
-          <div class="thumb"><img src="https://assets.codepen.io/3/internal/avatars/users/default.png?fit=crop&format=auto&height=120&width=120"></div>
-          <div class="description">
-            <h3 class="test-title">Sofia Soto</h3>
-            <p>Me encontré con esta maravillosa foto, que me tomo mi marido en el puerto de Génova.
-              Y es que no fue todo comer y beber, también tuve tiempo para poder leer y disfrutar de cada una de las hojas del libro de mi querida @nuriasanchezcoach. 
-              Es un libro tan maravilloso y tan lleno de amor que solo podía estar escrito por ella.
-              Es un libro muy ameno y con ejercicios muy útiles, lo recomiendo sin duda 100%.</p>
+      <h3 class="testimonios-title">¿Que dicen mis clientes de mí?</h3>
+
+      <div class="testimonial-carousel">
+        <div class="arrow left" onclick="changeSlide(-1)">&#10094;</div>
+        <div class="testimonial-slide active">
+          <p class="testimonial-text">
+            Me encontré con esta maravillosa foto, que me tomo mi marido en el
+            puerto de Génova. Y es que no fue todo comer y beber, también tuve
+            tiempo para poder leer y disfrutar de cada una de las hojas del
+            libro de mi querida @nuriasanchezcoach. Es un libro tan maravilloso
+            y tan lleno de amor que solo podía estar escrito por ella. Es un
+            libro muy ameno y con ejercicios muy útiles, lo recomiendo sin duda
+            100%.
+          </p>
+          <div class="testimonial-info">
+            <img src="img/photos/sofia.png" alt="Sofia" class="testimonial-photo" />
+            <span class="testimonial-author">Sofía Soto</span>
           </div>
-        </li>
-        <li class="test">
-          <div class="thumb"><img src="https://assets.codepen.io/3/internal/avatars/users/default.png?fit=crop&format=auto&height=120&width=120"></div>
-          <div class="description">
-            <h3 class="test-title">César López Llamas</h3>
-            <p>Pon tu felicidad en forma”, libro de mi querida Nuria Sánchez Alcolea (@nuriasanchezcoach). 
-              Si escribe la mitad de bien del buen rollo que me da, lo voy a disfrutar.</p>
+        </div>
+        <div class="testimonial-slide">
+          <p class="testimonial-text">
+            “Pon tu felicidad en forma”, libro de mi querida Nuria Sánchez Alcolea (@nuriasanchezcoach). 
+            Si escribe la mitad de bien del buen rollo que me da, lo voy a disfrutar.
+          </p>
+          <div class="testimonial-info">
+            <img src="img/photos/cesar.png" alt="Cesar" class="testimonial-photo" />
+            <span class="testimonial-author">César López Llamas</span>
           </div>
-        </li>
-        <li class="test">
-          <div class="thumb"><img src="https://assets.codepen.io/3/internal/avatars/users/default.png?fit=crop&format=auto&height=120&width=120"></div>
-          <div class="description">
-            <h3 class="test-title">Asociación de Vecinos La Manga</h3>
-            <p>Gracias por este taller. Ayer Nuria nos explico como@ser más feliz y el mundo de fitness holístico.
-              No solo se enfoca en fortalecer el cuerpo, sino también en nutrir la mente y el espíritu.   
-              Desde entrenamientos intensos hasta prácticas de meditación, cada paso que damos está diseñado para llevarnos hacia un equilibrio completo.</p>
+        </div>
+        <div class="testimonial-slide">
+          <p class="testimonial-text">
+            Gracias por este taller. Ayer Nuria nos explico como@ser más feliz y el mundo de fitness holístico.
+            No solo se enfoca en fortalecer el cuerpo, sino también en nutrir la mente y el espíritu.
+            Desde entrenamientos intensos hasta prácticas de meditación, cada paso que damos está diseñado para llevarnos hacia un equilibrio completo.
+          </p>
+          <div class="testimonial-info">
+            <img src="img/photos/manga.png" alt="Asociación vecinos" class="testimonial-photo" />
+            <span class="testimonial-author">Asoc. vecinos de La Manga</span>
           </div>
-        </li>
-        </ul>
+        </div>
+        <div class="arrow right" onclick="changeSlide(1)">&#10095;</div>
+      </div>
+    </div>
+    <div class="social-icons">
+      <a href="#"><img src="img/icons/facebook.png" alt="Facebook" /></a>
+      <a href="#"><img src="img/icons/tik-tok.png" alt="Tik tok" /></a>
+      <a href="#"><img src="img/icons/instagram.png" alt="Instagram" /></a>
+    </div>
   </body>
 </html>
+
+<script src="script.js"></script>
