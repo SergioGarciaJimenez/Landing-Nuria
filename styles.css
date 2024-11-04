@@ -236,6 +236,7 @@ body {
 	font-family: "Lato", Arial, Helvetica, serif;
 	background: #f5e0e9;
 	font-size: 1em;
+  height: 70vh;
 }
 
 /* Contenedor del carrusel */
@@ -252,10 +253,25 @@ body {
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .testimonial-slide.active {
+  opacity: 1;
+  transform: translateX(0);
+  position: relative;
   display: block;
+}
+
+.testimonial-slide.exit-left {
+  transform: translateX(-100%);
+  opacity: 0;
 }
 
 .testimonial-text {
