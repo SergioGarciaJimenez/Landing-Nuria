@@ -303,6 +303,10 @@ h3,
   line-height: 1.4;
 }
 
+.card-img {
+  width: 64px;
+}
+
 .card:hover {
   transform: translateY(-10px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -730,6 +734,10 @@ footer p {
     line-height: 1;
   }
 
+  .card-img {
+    width: 32px;
+  }
+
   .card-title {
     font-size: 0.8rem;
     margin-bottom: 10px;
@@ -983,6 +991,10 @@ footer p {
   .card-title {
     font-size: 1.1rem;
     margin-bottom: 10px;
+  }
+
+  .card-img {
+    width: 45px;
   }
 
   .price-del,
