@@ -328,6 +328,12 @@ h3,
   font-size: 17px;
 }
 
+
+#price-card {
+  margin-top: 3rem;
+  width: 25%;
+}
+
 .price-del,
 .price-def {
   font-size: 3rem;
@@ -337,10 +343,11 @@ h3,
   text-decoration: line-through;
   opacity: 0.6;
   margin: 30px;
+  font-weight: lighter;
 }
 
 .price-def {
-  color: white;
+  color: #b84e6b;
   font-weight: bold;
 }
 
