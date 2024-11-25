@@ -112,6 +112,7 @@ img#logo {
   gap: var(--cardsGap);
   padding-bottom: var(--cardsGap);
   align-items: center;
+  margin-bottom: 2rem;
 }
 
 .olcards li {
@@ -180,21 +181,45 @@ img#logo {
   text-align: center;
 }
 
-.intro button {
+/* Form */
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0rem;
+  margin-top: 2rem;
+}
+
+form label {
+  font-weight: bold;
+  color: #333;
+}
+
+form input,
+form textarea {
+  width: 22.5%;
+  font-size: 1.2rem;
+  font-family: "Raleway", sans-serif;
+  background-color: #f5e0e9;
+  border: none;
+  padding: 0.3rem;
+}
+
+form button {
+  padding: 0.75rem;
   background-color: #d86982;
   color: white;
   border: none;
-  padding: 1rem 1.5rem;
-  font-size: 1.25rem;
-  border-radius: 5px;
+  border-radius: 4px;
+  font-size: 1.1rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin-top: 1.5rem;
   transition: all 0.5s ease;
-  margin-bottom: 3rem;
 }
 
-.intro button:hover {
+form button:hover {
   box-shadow: 0px 12px 12px rgba(78, 76, 76, 0.2);
   background-color: #b84e6b;
 }
@@ -282,7 +307,7 @@ h3,
 .cards-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 5rem; 
+  gap: 5rem;
   max-width: 100%;
   padding: 0.5rem;
 }
@@ -327,7 +352,6 @@ h3,
 .card-text {
   font-size: 17px;
 }
-
 
 #price-card {
   margin-top: 3rem;
@@ -485,7 +509,7 @@ p {
   color: #b84e6b;
 }
 
-/* Garantía */ 
+/* Garantía */
 
 .garantia {
   display: flex;
@@ -621,7 +645,6 @@ footer p {
 /* Moviles */
 
 @media (max-width: 600px) {
-
   body {
     margin: 0;
     padding: 0;
@@ -841,7 +864,6 @@ footer p {
     padding-top: 2rem;
   }
 
-
   .garantia .columna-vert h3 {
     font-size: 1rem;
     margin: 0;
@@ -858,7 +880,7 @@ footer p {
     width: 20%;
   }
 
-  /* Preguntas */ 
+  /* Preguntas */
 
   .preguntas-cont {
     margin: 3rem 0;
@@ -874,17 +896,17 @@ footer p {
   .main-title:after {
     margin: 0 0.2rem;
   }
-    
+
   input[type="radio"]:checked + .item .question {
     margin-top: 0.5rem;
     margin-bottom: 1rem;
   }
-  
+
   .item {
     display: block;
     margin-bottom: 1rem;
   }
-  
+
   footer p {
     font-size: 1rem;
   }
@@ -1105,7 +1127,6 @@ footer p {
     width: 17.5%;
   }
 
-  
   .preguntas-cont {
     margin: 3rem 0;
     font-size: 1rem;
@@ -1120,17 +1141,17 @@ footer p {
   .main-title:after {
     margin: 0 0.2rem;
   }
-    
+
   input[type="radio"]:checked + .item .question {
     margin-top: 0.5rem;
     margin-bottom: 1rem;
   }
-  
+
   .item {
     display: block;
     margin-bottom: 1rem;
   }
-  
+
   footer p {
     font-size: 1.1rem;
   }
@@ -1219,7 +1240,6 @@ footer p {
   .garantia .columna-vert p {
     font-size: 1rem;
   }
-
 }
 
 @media (min-width: 1200px) and (max-width: 1350px) {
