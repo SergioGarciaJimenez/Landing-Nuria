@@ -199,7 +199,7 @@ form label {
 
 form input,
 form textarea {
-  width: 22.5%;
+  width: 35%;
   font-size: 1.2rem;
   font-family: "Raleway", sans-serif;
   background-color: #f5e0e9;
@@ -354,19 +354,24 @@ h3,
 }
 
 #price-card {
+  width: 22.5%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 1rem;
   margin-top: 3rem;
-  width: 25%;
 }
 
 .price-del,
 .price-def {
   font-size: 3rem;
+  margin: 0.5rem;
 }
 
 .price-del {
   text-decoration: line-through;
   opacity: 0.6;
-  margin: 30px;
   font-weight: lighter;
 }
 
@@ -383,6 +388,7 @@ h3,
   align-items: center;
   background-color: white;
   padding: 2rem 0;
+  text-align: center;
 }
 
 p {
@@ -393,7 +399,7 @@ p {
 }
 
 .nuria img {
-  width: 30%;
+  width: 27.5%;
   height: auto;
   object-fit: cover;
 }
@@ -673,19 +679,39 @@ footer p {
     font-size: 0.7rem;
   }
 
-  .intro button {
-    padding: 1rem 1rem;
-    font-size: 0.7rem;
-    margin-top: 1.5rem;
-    margin-bottom: 0rem;
-  }
-
   .columna-vert {
     width: 75%;
   }
 
   #nuria-libro {
     display: none;
+  }
+
+  /* Form */
+
+  form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5rem;
+  }
+
+  form input,
+  form textarea {
+    width: 50%;
+    height: 2rem;
+    font-size: 0.7rem;
+    padding: 0rem;
+    margin: 0;
+  }
+
+  form button {
+    padding: 0.3rem;
+    font-size: 0.7rem;
+    height: 2rem;
+    margin-top: 0;
   }
 
   /* Cards */
@@ -773,9 +799,19 @@ footer p {
     margin-bottom: 10px;
   }
 
+  #price-card {
+    width: 50%;
+    padding-bottom: 0.5rem;
+  }
+
+  #price-card h3 {
+    font-size: 1.2rem;
+  }
+
   .price-del,
   .price-def {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
+    margin: 6px;
   }
 
   /* Nuria */
@@ -937,11 +973,27 @@ footer p {
     font-size: 0.8rem;
   }
 
-  .intro button {
-    padding: 1rem 1rem;
+  /* Form */
+
+  form {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  form input,
+  form textarea {
+    width: 50%;
+    height: 2rem;
+    font-size: 0.85rem;
+    padding: 0rem;
+    margin: 0;
+  }
+
+  form button {
+    padding: 0.3rem;
     font-size: 0.8rem;
-    margin-top: 1.5rem;
-    margin-bottom: 0.8rem;
+    height: 2rem;
+    margin-top: 0;
   }
 
   /* Cards */
@@ -1026,10 +1078,22 @@ footer p {
     width: 45px;
   }
 
+  #price-card h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  #price-card p {
+    margin: 0;
+    padding: 0;
+  }
+
   .price-del,
   .price-def {
-    font-size: 2.2rem;
+    font-size: 1.3rem;
+    margin: 6px;
   }
+
   /* Nuria */
 
   .nuria {
@@ -1160,6 +1224,7 @@ footer p {
 /* Desktop */
 
 @media (min-width: 1025px) and (max-width: 1199px) {
+
   img#logo {
     padding-top: 10px;
   }
@@ -1179,11 +1244,26 @@ footer p {
     max-width: 550px;
   }
 
-  .intro button {
-    padding: 1rem 1.25rem;
+  /* Form */
+
+  form {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  form input,
+  form textarea {
+    width: 40%;
+    height: 3rem;
     font-size: 1rem;
-    margin-top: 1.5rem;
-    margin-bottom: 1rem;
+    padding: 0rem 0.5rem;
+  }
+
+  form button {
+    padding: 0.6rem;
+    font-size: 0.95rem;
+    height: 3rem;
+    margin-top: 0;
   }
 
   /* Cards */
@@ -1206,6 +1286,27 @@ footer p {
     width: 475px;
   }
 
+  .card {
+    padding: 6px 12px;
+    width: 220px;
+    height: 175px;
+    margin: 1rem;
+  }
+
+  .card p {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+
+  .card-img {
+    width: 45px;
+  }
+
   /* Puntos */
 
   .puntos ul {
@@ -1220,6 +1321,10 @@ footer p {
 
   #pico {
     width: 32.5%;
+  }
+
+  #price-card {
+    width: 32%;
   }
 
   .nuria {
@@ -1263,6 +1368,28 @@ footer p {
     font-size: 1.4rem;
   }
 
+  /* Form */
+
+  form {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  form input,
+  form textarea {
+    width: 40%;
+    height: 3rem;
+    font-size: 1rem;
+    padding: 0rem 0.5rem;
+  }
+
+  form button {
+    padding: 0.6rem;
+    font-size: 1rem;
+    height: 3rem;
+    margin-top: 0;
+  }
+
   /* Puntos */
 
   .puntos ul {
@@ -1277,6 +1404,10 @@ footer p {
 
   #pico {
     width: 32.5%;
+  }
+
+  #price-card {
+    width: 27.5%;
   }
 
   /* Garantía */
