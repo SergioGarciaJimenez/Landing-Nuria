@@ -72,10 +72,11 @@
         </div>
         <img id="nuria-libro" src="img/photos/Libro sin fondo.png" alt="Nuria con libro"/>
       </div>
-      <form action="php/send_mail.php" method="POST">
-        <input type="email" id="email" name="email" placeholder="¡Escribe tu correo para entrar!" required />
+      <form id="emailForm">
+        <input type="email" id="email" name="email" placeholder="Correo electrónico para recibir la información" required />
         <button type="submit">Enviar</button>
-      </form>
+    </form>
+    <div id="responseMessage"></div>
     </div>
 
 
